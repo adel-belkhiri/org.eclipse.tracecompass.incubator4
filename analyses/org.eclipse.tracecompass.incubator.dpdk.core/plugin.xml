@@ -23,6 +23,15 @@
          </tracetype>
       </module>
       <module
+            analysis_module="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.spin.analysis.DpdkEthdevSpinAnalysisModule"
+            id="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.spin.analysis"
+            name="DPDK Ethernet Spin Analysis">
+         <tracetype
+               applies="true"
+               class="org.eclipse.tracecompass.incubator.dpdk.core.trace.DpdkTrace">
+         </tracetype>
+      </module>
+      <module
             analysis_module="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.throughput.analysis.DpdkEthdevAnalysisModule"
             automatic="true"
             id="org.eclipse.tracecompass.incubator.dpdk.ethdev.throughput.analysis"
@@ -42,6 +51,10 @@
       <dataProviderFactory
             class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.rate.analysis.DpdkEtherRateDataProviderFactory"
             id="org.eclipse.tracecompass.incubator.dpdk.ethdev.rate.dataprovider">
+      </dataProviderFactory>
+      <dataProviderFactory
+            class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.spin.analysis.DpdkEtherSpinDataProviderFactory"
+            id="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.spin.dataprovider">
       </dataProviderFactory>
       <dataProviderFactory
             class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.throughput.analysis.DpdkEtherThroughputBpsDataProviderFactory"

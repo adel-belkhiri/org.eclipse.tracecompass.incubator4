@@ -13,6 +13,13 @@
       </output>
       <output
             class="org.eclipse.tracecompass.tmf.ui.analysis.TmfAnalysisViewOutput"
+            id="org.eclipse.tracecompass.incubator.internal.dpdk.ui.ethdev.spin.statistics.view">
+         <analysisModuleClass
+               class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.spin.analysis.DpdkEthdevSpinAnalysisModule">
+         </analysisModuleClass>
+      </output>
+      <output
+            class="org.eclipse.tracecompass.tmf.ui.analysis.TmfAnalysisViewOutput"
             id="org.eclipse.tracecompass.incubator.dpdk.ethdev.rate.view">
          <analysisModuleClass
                class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.rate.analysis.DpdkEthdevRateAnalysis">
@@ -45,6 +52,13 @@
             class="org.eclipse.tracecompass.incubator.internal.dpdk.ui.ethdev.rate.NicQueueRateView"
             id="org.eclipse.tracecompass.incubator.dpdk.ethdev.rate.view"
             name="Ethernet Rate View"
+            restorable="true">
+      </view>
+      <view
+            category="org.eclipse.tracecompass.incubator.internal.dpdk.ui.views.category"
+            class="org.eclipse.tracecompass.incubator.internal.dpdk.ui.ethdev.spin.ThreadSpinStatisticsView"
+            id="org.eclipse.tracecompass.incubator.internal.dpdk.ui.ethdev.spin.statistics.view"
+            name="Ethernet PMD Effective Busyness"
             restorable="true">
       </view>
       <view
