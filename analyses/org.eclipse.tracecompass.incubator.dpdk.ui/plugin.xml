@@ -18,6 +18,13 @@
                class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.rate.analysis.DpdkEthdevRateAnalysis">
          </analysisModuleClass>
       </output>
+      <output
+            class="org.eclipse.tracecompass.tmf.ui.analysis.TmfAnalysisViewOutput"
+            id="org.eclipse.tracecompass.incubator.dpdk.ethdev.throughput.bps.view">
+         <analysisModuleClass
+               class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.throughput.analysis.DpdkEthdevAnalysisModule">
+         </analysisModuleClass>
+      </output>
    </extension>
    <extension
          point="org.eclipse.ui.views">
@@ -38,6 +45,13 @@
             class="org.eclipse.tracecompass.incubator.internal.dpdk.ui.ethdev.rate.NicQueueRateView"
             id="org.eclipse.tracecompass.incubator.dpdk.ethdev.rate.view"
             name="Ethernet Rate View"
+            restorable="true">
+      </view>
+      <view
+            category="org.eclipse.tracecompass.incubator.internal.dpdk.ui.views.category"
+            class="org.eclipse.tracecompass.incubator.internal.dpdk.ui.ethdev.throughput.NicQueueThroughputView"
+            id="org.eclipse.tracecompass.incubator.dpdk.ethdev.throughput.bps.view"
+            name="Ethernet Throughput View"
             restorable="true">
       </view>
    </extension>
