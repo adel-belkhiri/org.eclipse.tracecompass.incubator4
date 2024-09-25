@@ -66,6 +66,13 @@
       </dataProviderFactory>
    </extension>
    <extension
+         point="org.eclipse.tracecompass.tmf.core.analysis.ondemand">
+      <analysis
+            class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.poll.distribution.analysis.PollDistributionAnalysis"
+            id="org.eclipse.tracecompass.incubator.dpdk.core.ethdev.poll.distribution">
+      </analysis>
+   </extension>
+   <extension
          point="org.eclipse.linuxtools.tmf.core.tracetype">
       <type
             category="org.eclipse.linuxtools.tmf.ctf.core.category.ctf"
