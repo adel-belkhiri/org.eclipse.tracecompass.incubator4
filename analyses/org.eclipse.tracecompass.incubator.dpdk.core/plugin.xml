@@ -12,12 +12,26 @@
                class="org.eclipse.tracecompass.incubator.dpdk.core.trace.DpdkTrace">
          </tracetype>
       </module>
+            <module
+            analysis_module="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.rate.analysis.DpdkEthdevRateAnalysis"
+            automatic="true"
+            id="org.eclipse.tracecompass.incubator.dpdk.ethdev.rate.analysis"
+            name="DPDK Ethernet Rate Analysis">
+         <tracetype
+               applies="true"
+               class="org.eclipse.tracecompass.incubator.dpdk.core.trace.DpdkTrace">
+         </tracetype>
+      </module>
    </extension>
    <extension
          point="org.eclipse.tracecompass.tmf.core.dataprovider">
       <dataProviderFactory
             class="org.eclipse.tracecompass.incubator.internal.dpdk.core.lcore.analysis.DpdkLogicalCoreDataProviderFactory"
             id="org.eclipse.tracecompass.incubator.dpdk.lcore.dataprovider">
+      </dataProviderFactory>
+      <dataProviderFactory
+            class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.rate.analysis.DpdkEtherRateDataProviderFactory"
+            id="org.eclipse.tracecompass.incubator.dpdk.ethdev.rate.dataprovider">
       </dataProviderFactory>
    </extension>
    <extension
