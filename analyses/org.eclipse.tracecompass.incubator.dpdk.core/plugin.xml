@@ -68,6 +68,10 @@
    <extension
          point="org.eclipse.tracecompass.tmf.core.analysis.ondemand">
       <analysis
+            class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.poll.stats.analysis.PollStatsAnalysis"
+            id="org.eclipse.tracecompass.incubator.dpdk.core.ethdev.poll.stats">
+      </analysis>
+      <analysis
             class="org.eclipse.tracecompass.incubator.internal.dpdk.core.ethdev.poll.distribution.analysis.PollDistributionAnalysis"
             id="org.eclipse.tracecompass.incubator.dpdk.core.ethdev.poll.distribution">
       </analysis>
